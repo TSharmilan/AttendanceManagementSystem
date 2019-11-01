@@ -1,0 +1,9 @@
+﻿body { 
+    background-image: url('../img/bgImage.png');  
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    
+}

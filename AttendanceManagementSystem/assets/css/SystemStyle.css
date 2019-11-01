@@ -1,0 +1,12 @@
+﻿
+.navbar{
+		margin-top:0px;
+	}
+/*input[type=text],input[type=checkbox],input[type=radio], select {
+    border: 1px #5bc0de solid;
+}*/
+.form-control {
+    border: 1px #5bc0de solid;
+}
+
+

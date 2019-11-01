@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AttendanceManagementSystemCore.Domain
+{
+    [Serializable]
+    public class Teacher
+    {
+        [Key]
+        public int TeacherID { get; set; }
+
+        public string TeacherName { get; set; }
+
+        public string EmpNo { get; set; }
+
+        public string UserName { get; set; }
+
+        public string Password { get; set; }
+
+        public string School { get; set; }
+
+        public DateTime EnteredDate { get; set; }
+    }
+}

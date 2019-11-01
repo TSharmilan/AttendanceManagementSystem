@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceManagementSystem", "AttendanceManagementSystem\AttendanceManagementSystem.csproj", "{CA438383-F01D-4120-91B3-D0208B1D5637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceManagementSystemCore", "AttendanceManagementSystemCore\AttendanceManagementSystemCore.csproj", "{53285FE0-7658-47D9-AC28-1A9F6904E8F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA438383-F01D-4120-91B3-D0208B1D5637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA438383-F01D-4120-91B3-D0208B1D5637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA438383-F01D-4120-91B3-D0208B1D5637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA438383-F01D-4120-91B3-D0208B1D5637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53285FE0-7658-47D9-AC28-1A9F6904E8F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53285FE0-7658-47D9-AC28-1A9F6904E8F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53285FE0-7658-47D9-AC28-1A9F6904E8F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53285FE0-7658-47D9-AC28-1A9F6904E8F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F538BB6-079B-4C45-860E-9830273051C1}
+	EndGlobalSection
+EndGlobal

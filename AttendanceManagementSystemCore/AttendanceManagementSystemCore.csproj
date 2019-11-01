@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53285FE0-7658-47D9-AC28-1A9F6904E8F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AttendanceManagementSystemCore</RootNamespace>
+    <AssemblyName>AttendanceManagementSystemCore</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Controller\AdminController.cs" />
+    <Compile Include="Controller\AttendanceTableController.cs" />
+    <Compile Include="Controller\DivisionController.cs" />
+    <Compile Include="Controller\GradeController.cs" />
+    <Compile Include="Controller\MediumController.cs" />
+    <Compile Include="Controller\StudentController.cs" />
+    <Compile Include="Controller\TeacherController.cs" />
+    <Compile Include="DAL\AdminDAL.cs" />
+    <Compile Include="DAL\AttendanceTableDAL.cs" />
+    <Compile Include="DAL\DivisionDAL.cs" />
+    <Compile Include="DAL\GradeDAL.cs" />
+    <Compile Include="DAL\MediumDAL.cs" />
+    <Compile Include="DAL\StudentDAL.cs" />
+    <Compile Include="DAL\TeacherDAL.cs" />
+    <Compile Include="Domain\Admin.cs" />
+    <Compile Include="Domain\AttendanceTable.cs" />
+    <Compile Include="Domain\Division.cs" />
+    <Compile Include="Domain\Grade.cs" />
+    <Compile Include="Domain\Medium.cs" />
+    <Compile Include="Domain\Student.cs" />
+    <Compile Include="Domain\Teacher.cs" />
+    <Compile Include="EncryptionDetails.cs" />
+    <Compile Include="Infrastructure\AttendanceContext.cs" />
+    <Compile Include="Migrations\201910220840125_a.cs" />
+    <Compile Include="Migrations\201910220840125_a.Designer.cs">
+      <DependentUpon>201910220840125_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910221547103_b.cs" />
+    <Compile Include="Migrations\201910221547103_b.Designer.cs">
+      <DependentUpon>201910221547103_b.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910300523358_c.cs" />
+    <Compile Include="Migrations\201910300523358_c.Designer.cs">
+      <DependentUpon>201910300523358_c.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910300807285_d.cs" />
+    <Compile Include="Migrations\201910300807285_d.Designer.cs">
+      <DependentUpon>201910300807285_d.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910310548457_e.cs" />
+    <Compile Include="Migrations\201910310548457_e.Designer.cs">
+      <DependentUpon>201910310548457_e.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911010541518_f.cs" />
+    <Compile Include="Migrations\201911010541518_f.Designer.cs">
+      <DependentUpon>201911010541518_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910220840125_a.resx">
+      <DependentUpon>201910220840125_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910221547103_b.resx">
+      <DependentUpon>201910221547103_b.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910300523358_c.resx">
+      <DependentUpon>201910300523358_c.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910300807285_d.resx">
+      <DependentUpon>201910300807285_d.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910310548457_e.resx">
+      <DependentUpon>201910310548457_e.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911010541518_f.resx">
+      <DependentUpon>201911010541518_f.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
